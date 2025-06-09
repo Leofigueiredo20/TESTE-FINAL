@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #000000, #3e3433, #35352b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 60px; /* espaço para a barra fixa */
+}
+
+/* Barra de navegação fixa no topo */
+.barra-login {
+  background: linear-gradient(to right, #ac900e, #bfa222, #d3b436, #e6c54a, #fad75e);
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.botao,
+.botao-login {
+  display: inline-block;
+  background: linear-gradient(to right, #4caf50, #ffffff, #c80605);
+  color: black;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.botao:hover,
+.botao-login:hover {
+  transform: scale(1.05);
+  background-color: #444;
+}
+
+/* Caixa de login */
+.login-container {
+  background: linear-gradient(to right, #fa8331, #faba66, #c0c0c0);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin-top: 60px; /* evita sobreposição com a barra */
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+.login-container .link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-container .link a {
+  text-decoration: none;
+  color: #007bff;
+}
